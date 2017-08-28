@@ -44,7 +44,7 @@ function selectItem(inventory) {
     ])
     .then(function(val) {
      
-      checkIfShouldExit(val.choice);
+      exitProgram(val.choice);
       var choiceId = parseInt(val.choice);
       var product = checkInventory(choiceId, inventory);
 
@@ -75,7 +75,7 @@ function selectQuantity(product) {
     ])
     .then(function(val) {
    
-      checkIfShouldExit(val.quantity);
+      exitProgram(val.quantity);
       var quantity = parseInt(val.quantity);
 
     
@@ -113,7 +113,7 @@ function checkInventory(choiceId, inventory) {
   return null;
 }
 
-function checkIfShouldExit(choice) {
+function exitProgram(choice) {
   if (choice.toLowerCase() === "q") {
     console.log("Goodbye!");
     process.exit(0);
