@@ -1,7 +1,7 @@
 # Bamazon
 
-You can fake purchase real things here!
-Why, you ask? Why not! - I say! 
+### You can fake purchase real things here!
+#### Why, you ask? Why not! - I say! 
  
 ###### To use this app : 
 1. clone the directory to your computer
